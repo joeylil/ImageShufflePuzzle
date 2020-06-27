@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tJg7HGF5rnl4t98ePnhXE7SydfNt27OzE0TtotT1P0UiwALw/op3iy0teaAqpytCUeOT5g+NoSNNWAlW5Iz08g==",
+  "success": true,
+  "projectFilePath": "D:\\downloads\\blockpuzzle\\test\\test\\test.iOS\\test.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joeyl\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Joeyl\\.nuget\\packages\\xamarin.essentials\\1.1.0\\xamarin.essentials.1.1.0.nupkg.sha512",
+    "C:\\Users\\Joeyl\\.nuget\\packages\\xamarin.forms\\4.1.0.555618\\xamarin.forms.4.1.0.555618.nupkg.sha512"
+  ],
+  "logs": []
+}

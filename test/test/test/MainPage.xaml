@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="test.MainPage">
+
+   
+        <StackLayout>
+        <Label Text="{Binding wins, Mode=TwoWay}" FontSize="20" />
+        <Grid x:Name="mainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Image Grid.Column="0" Grid.Row="0" Source="{Binding topLeftImage, Mode=TwoWay}">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Grid.Row="0" Source="{Binding topMiddleImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Grid.Row="0" Source="{Binding topRightImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="0" Grid.Row="1" Source="{Binding centreLeftImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Grid.Row="1" Source="{Binding centreMiddleImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Grid.Row="1" Source="{Binding centreRightImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="0" Grid.Row="2" Source="{Binding bottomLeftImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" Grid.Row="2" Source="{Binding bottomMiddleImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="2" Grid.Row="2" Source="{Binding bottomRightImage, Mode=TwoWay}" Aspect="Fill">
+                <Image.GestureRecognizers >
+                    <SwipeGestureRecognizer Swiped="Left" Direction="Left"/>
+                    <SwipeGestureRecognizer Swiped="Up" Direction="Up"/>
+                    <SwipeGestureRecognizer Swiped="Down" Direction="Down"/>
+                    <SwipeGestureRecognizer Swiped="Right" Direction="Right"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+        <StackLayout Orientation="Horizontal" Spacing="175" Margin="30,0,0,0">
+            <Button Text="Easy" BackgroundColor="ForestGreen" FontSize="50" Clicked="easyMode"/>
+            <Button Text="Medium" BackgroundColor="LightGoldenrodYellow" FontSize="50" Clicked="mediumMode"/>
+            <Button Text="Hard" BackgroundColor="Red" FontSize="50" Clicked="hardMode"/>
+            <ImageButton HorizontalOptions="End"
+                    VerticalOptions="End"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    CornerRadius="15"
+                    Source="Images/refresh.png"
+                    Clicked="refreshBoard"
+                     />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

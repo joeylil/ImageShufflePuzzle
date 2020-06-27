@@ -1,0 +1,1 @@
+D:\downloads\blockpuzzle\test\test\test.UWP\test.UWP.csproj;x86
